@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Membership status | NeighbourNest</title>
+  <link rel="stylesheet" href="fahim.css">
+  <script src="shared/data.js" defer></script>
+  <script src="shared/common.js" defer></script>
+  <script src="membership.js" defer></script>
+</head>
+<body data-page="membership" data-module="FAHIM">
+<main class="public">
+  <div class="public-brand">
+    <a class="brand" href="index.html">Neighbour<span>Nest</span></a>
+    <span class="tagline">Your neighbourhood, together.</span>
+  </div>
+  <div class="leaf one" aria-hidden="true"></div>
+  <div class="leaf two" aria-hidden="true"></div>
+  <section class="public-card">
+    <h1 id="requestHeading">Your request is pending</h1>
+    <p class="subtitle">Thanks for joining NeighbourNest.</p>
+    <section class="feature-strip">
+      <h2 id="reviewHeading">Waiting for approval</h2>
+      <p id="reviewMessage">Your community administrator will review your name and building details.</p>
+      <span class="pill pending" id="status">Pending</span>
+    </section>
+    <div class="actions">
+      <a class="btn" id="editRequest" href="pending-profile.html">Edit profile</a>
+  
+      <a class="btn secondary" href="index.html">Log out</a>
+    </div>
+  </section>
+</main>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>

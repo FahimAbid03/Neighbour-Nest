@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit membership request | NeighbourNest</title>
+  <link rel="stylesheet" href="fahim.css">
+  <script src="shared/data.js" defer></script>
+  <script src="shared/common.js" defer></script>
+  <script src="pending-profile.js" defer></script>
+</head>
+<body data-page="pending-profile" data-module="FAHIM">
+<main class="public">
+  <div class="public-brand">
+    <a class="brand" href="index.html">Neighbour<span>Nest</span></a>
+    <span class="tagline">Your neighbourhood, together.</span>
+  </div>
+  <div class="leaf one" aria-hidden="true"></div>
+  <div class="leaf two" aria-hidden="true"></div>
+  <section class="public-card">
+    <h1>Edit your request</h1>
+    <p class="muted">Update the name and building on your membership request.</p>
+    <form id="pendingForm" novalidate>
+      <div class="form-group">
+        <label for="name">Full name</label>
+        <input id="name" type="text" placeholder="Your full name" aria-describedby="nameError">
+        <span class="error" id="nameError" aria-live="polite"></span>
+      </div>
+      <div class="form-group">
+        <label for="building">Building or block</label>
+        <input id="building" type="text" placeholder="e.g. Block A" aria-describedby="buildingError">
+        <span class="error" id="buildingError" aria-live="polite"></span>
+      </div>
+      <div class="actions">
+        <button class="btn" type="submit">Save changes</button>
+        <a class="btn secondary" href="membership.html">Back</a>
+      </div>
+    </form>
+  </section>
+</main>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>

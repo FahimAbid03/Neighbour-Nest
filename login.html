@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Log in | NeighbourNest</title>
+  <link rel="stylesheet" href="fahim.css">
+  <script src="shared/data.js" defer></script>
+  <script src="shared/common.js" defer></script>
+  <script src="login.js" defer></script>
+</head>
+<body data-page="login" data-module="FAHIM">
+<main class="public">
+  <div class="public-brand">
+    <a class="brand" href="index.html">Neighbour<span>Nest</span></a>
+    <span class="tagline">Your neighbourhood, together.</span>
+  </div>
+  <div class="leaf one" aria-hidden="true"></div>
+  <div class="leaf two" aria-hidden="true"></div>
+  <section class="public-card">
+    <h1>Welcome back</h1>
+    <p class="subtitle">Log in to your community account.</p>
+    <form id="loginForm" novalidate>
+      <div class="form-group">
+        <label for="email">Email address</label>
+        <input id="email" type="email" placeholder="asha@example.com" aria-describedby="emailError">
+        <span class="error" id="emailError" aria-live="polite"></span>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input id="password" type="password" placeholder="At least 8 characters" aria-describedby="passwordError">
+        <span class="error" id="passwordError" aria-live="polite"></span>
+      </div>
+      <button class="btn" type="submit">Log in</button>
+    </form>
+    <p class="note">Demo login accepts any valid email and a password of at least 8 characters. Approved sign-ins open Profile in this module.</p>
+    <p class="note">New here? <a href="register.html">Create an account</a></p>
+    <a class="btn secondary small" href="index.html">Back to home</a>
+  </section>
+</main>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>

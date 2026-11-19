@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile | NeighbourNest</title>
+  <link rel="stylesheet" href="fahim.css">
+  <script src="shared/data.js" defer></script>
+  <script src="shared/common.js" defer></script>
+  <script src="profile.js" defer></script>
+</head>
+<body data-page="profile" data-module="FAHIM">
+<div class="app-shell">
+  <p class="demo-notice">Interactive frontend demo · Sample data only · FAHIM module</p>
+  <header class="topbar">
+    <a class="brand" href="index.html">Neighbour<span>Nest</span></a>
+    <span class="community">Greenview Community</span>
+    <span class="user">Resident</span>
+  </header>
+  <div class="layout">
+    <aside class="sidebar">
+      <nav aria-label="Main navigation">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="login.html">Log in</a>
+        <a class="nav-link" href="register.html">Register</a>
+        <a class="nav-link active" href="profile.html" aria-current="page">Profile</a>
+      </nav>
+      <div class="sidebar-bottom">
+        <span>Greenview, Dhaka</span>
+        <a href="index.html">Module home</a>
+      </div>
+    </aside>
+    <main class="main">
+      <header class="page-title">
+        <h1>Your community profile</h1>
+      </header>
+
+      <section class="panel flex-between">
+        <div>
+          <h2 id="profileName"></h2>
+          <p id="profileBuilding"></p>
+          <p>Joined this community as a resident.</p>
+          <span class="pill" id="profileStatus"></span>
+        </div>
+        <a class="btn small" href="profile-edit.html">Edit profile</a>
+      </section>
+      <div class="cards profile-cards">
+        <section class="panel"><h2>Your activity</h2><p id="activity"></p></section>
+        <section class="panel"><h2>Account privacy</h2><p>Your email is private. You can edit your building label from your profile.</p></section>
+      </div>
+    </main>
+  </div>
+</div>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>
